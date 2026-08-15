@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andina Observa | Análisis Político y Ambiental del Perú</title>
+
+  <!-- ============ SEO BÁSICO ============ -->
+  <meta name="description" content="Andina Observa es un portal peruano sin fines de lucro dedicado al análisis político y ambiental: investigación rigurosa sobre gobernanza, biodiversidad y conflictos socioambientales en el Perú.">
+  <meta name="author" content="Andina Observa">
+
+  <!-- ============ OPEN GRAPH ============ -->
+  <meta property="og:title" content="Andina Observa | Análisis Político y Ambiental del Perú">
+  <meta property="og:description" content="Investigación independiente sobre política pública, biodiversidad amazónica y conflictos socioambientales en el Perú.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=1200&q=80&auto=format&fit=crop">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PE">
+
+  <!-- ============ TIPOGRAFÍA (Google Fonts) ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ============ ICONOS (FontAwesome CDN) ============ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- ============ HOJA DE ESTILOS PROPIA ============ -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================
+       ENCABEZADO / NAVEGACIÓN FIJA
+  =========================================================== -->
+  <header class="site-header" id="inicio">
+    <div class="header-inner container">
+
+      <!-- Logo institucional -->
+      <a href="#inicio" class="logo" aria-label="Andina Observa, ir al inicio">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34">
+            <polyline points="2,32 10,18 16,24 24,10 30,16 38,4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Andina<strong>Observa</strong></span>
+      </a>
+
+      <!-- Navegación principal (desktop) -->
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#analisis-politico" class="nav-link">Análisis Político</a></li>
+          <li><a href="#medio-ambiente" class="nav-link">Medio Ambiente</a></li>
+          <li><a href="#podcasts" class="nav-link">Podcasts</a></li>
+        </ul>
+      </nav>
+
+      <!-- Barra de búsqueda -->
+      <div class="search-box">
+        <label for="search-input" class="visually-hidden">Buscar publicaciones</label>
+        <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+        <input type="search" id="search-input" placeholder="Buscar publicaciones…" aria-label="Buscar publicaciones por título, autor o categoría">
+      </div>
+
+      <!-- Botón menú hamburguesa (móvil) -->
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Menú móvil desplegable -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil">
+      <div class="mobile-search-box">
+        <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+        <input type="search" id="search-input-mobile" placeholder="Buscar publicaciones…" aria-label="Buscar publicaciones (móvil)">
+      </div>
+      <ul>
+        <li><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
+        <li><a href="#analisis-politico" class="mobile-nav-link">Análisis Político</a></li>
+        <li><a href="#medio-ambiente" class="mobile-nav-link">Medio Ambiente</a></li>
+        <li><a href="#podcasts" class="mobile-nav-link">Podcasts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==========================================================
+         HERO SECTION
+    =========================================================== -->
+    <section class="hero" aria-label="Presentación institucional">
+      <div class="hero-media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=1920&q=80&auto=format&fit=crop" alt="" class="hero-img">
+        <div class="hero-overlay"></div>
+        <div class="hero-topo" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-content container">
+        <p class="hero-eyebrow">Periodismo de datos · Investigación independiente</p>
+        <h1 class="hero-title">Entender el Perú desde sus montañas, sus ríos y su poder político.</h1>
+        <p class="hero-subtitle">Andina Observa es una organización sin fines de lucro que produce análisis riguroso sobre política pública y medio ambiente, para investigadores, periodistas y ciudadanía informada.</p>
+        <div class="hero-actions">
+          <a href="#publicaciones" class="btn btn-primary" id="cta-scroll">
+            Ver publicaciones <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+          </a>
+          <a href="#podcasts" class="btn btn-ghost">Escuchar podcasts</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SECCIÓN DE PUBLICACIONES
+    =========================================================== -->
+    <section class="publications" id="publicaciones" aria-label="Publicaciones recientes">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Investigación</p>
+          <h2>Publicaciones recientes</h2>
+          <p class="section-lead">Análisis y reportajes sobre gobernanza, biodiversidad y los conflictos que definen el presente ambiental y político del país.</p>
+        </div>
+
+        <!-- Resultado de búsqueda / mensaje de vacío -->
+        <p class="no-results" id="no-results" hidden>No se encontraron publicaciones que coincidan con tu búsqueda.</p>
+
+        <!-- Análisis Político -->
+        <h3 class="subsection-title" id="analisis-politico"><i class="fa-solid fa-landmark" aria-hidden="true"></i> Análisis Político</h3>
+        <div class="articles-grid" id="grid-politico">
+
+          <article class="card" data-category="Política Pública" data-title="Nueva Ley Forestal: ¿Protección real o retroceso ambiental?" data-excerpt="El Congreso aprobó modificaciones al reglamento forestal que generan preocupación entre especialistas en gobernanza ambiental." data-author="Claudia Rimac">
+            <a href="#" class="card-media" aria-hidden="true" tabindex="-1">
+              <img src="https://images.unsplash.com/photo-1555848962-6e79363ec58f?w=800&q=80&auto=format&fit=crop" alt="Sesión del Congreso de la República del Perú en el hemiciclo" loading="lazy">
+            </a>
+            <div class="card-body">
+              <span class="tag tag-politica">Política Pública</span>
+              <h4 class="card-title"><a href="#">Nueva Ley Forestal: ¿Protección real o retroceso ambiental?</a></h4>
+              <p class="card-excerpt">El Congreso aprobó modificaciones al reglamento forestal que generan preocupación entre especialistas en gobernanza ambiental y organizaciones indígenas.</p>
+              <div class="card-meta">
+                <span class="card-author"><i class="fa-regular fa-user" aria-hidden="true"></i> Claudia Rimac</span>
+                <time class="card-date" datetime="2026-07-02">2 jul 2026</time>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="Conflictos Socioambientales" data-title="Las Bambas: cinco años de tensión entre minería y comunidades" data-excerpt="Un recuento de los acuerdos incumplidos y las demandas territoriales que mantienen en vilo al corredor minero del sur andino." data-author="Jorge Huamaní">
+            <a href="#" class="card-media" aria-hidden="true" tabindex="-1">
+              <img src="https://images.unsplash.com/photo-1547234935-80c7145ec969?w=800&q=80&auto=format&fit=crop" alt="Maquinaria de extracción minera en una zona andina del Perú" loading="lazy">
+            </a>
+            <div class="card-body">
+              <span class="tag tag-conflicto">Conflictos Socioambientales </span>
+              <h4 class="card-title"><a href="#">Las Bambas: cinco años de tensión entre minería y comunidades</a></h4>
+              <p class="card-excerpt">Un recuento de los acuerdos incumplidos y las demandas territoriales que mantienen en vilo al corredor minero del sur andino.</p>
+              <div class="card-meta">
+                <span class="card-author"><i class="fa-regular fa-user" aria-hidden="true"></i> Jorge Huamaní</span>
+                <time class="card-date" datetime="2026-06-18">18 jun 2026</time>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="Gobernanza" data-title="Descentralización ambiental: el rol de los gobiernos regionales" data-excerpt="¿Tienen los gobiernos regionales las capacidades técnicas para fiscalizar la actividad extractiva en sus territorios?" data-author="Milagros Ttito">
+            <a href="#" class="card-media" aria-hidden="true" tabindex="-1">
+              <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&q=80&auto=format&fit=crop" alt="Edificio de una municipalidad regional en el Perú" loading="lazy">
+            </a>
+            <div class="card-body">
+              <span class="tag tag-gobernanza">Gobernanza</span>
+              <h4 class="card-title"><a href="#">Descentralización ambiental: el rol de los gobiernos regionales</a></h4>
+              <p class="card-excerpt">¿Tienen los gobiernos regionales las capacidades técnicas para fiscalizar la actividad extractiva en sus territorios?</p>
+              <div class="card-meta">
+                <span class="card-author"><i class="fa-regular fa-user" aria-hidden="true"></i> Milagros Ttito</span>
+                <time class="card-date" datetime="2026-05-27">27 may 2026</time>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="Política Pública" data-title="Presupuesto climático 2026: ¿compromiso o promesa vacía?" data-excerpt="Analizamos la ejecución real del gasto público etiquetado como adaptación y mitigación frente al cambio climático." data-author="Renzo Delgado">
+            <a href="#" class="card-media" aria-hidden="true" tabindex="-1">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80&auto=format&fit=crop" alt="Documentos y gráficos de presupuesto público sobre un escritorio" loading="lazy">
+            </a>
+            <div class="card-body">
+              <span class="tag tag-politica">Política Pública</span>
+              <h4 class="card-title"><a href="#">Presupuesto climático 2026: ¿compromiso o promesa vacía?</a></h4>
+              <p class="card-excerpt">Analizamos la ejecución real del gasto público etiquetado como adaptación y mitigación frente al cambio climático.</p>
+              <div class="card-meta">
+                <span class="card-author"><i class="fa-regular fa-user" aria-hidden="true"></i> Renzo Delgado</span>
+                <time class="card-date" datetime="2026-04-30">30 abr 2026</time>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Medio Ambiente -->
+        <h3 class="subsection-title" id="medio-ambiente"><i class="fa-solid fa-leaf" aria-hidden="true"></i> Medio Ambiente</h3>
+        <div class="articles-grid" id="grid-ambiente">
+
+          <article class="card" data-category="Biodiversidad Amazonía" data-title="El corredor biológico Vilcabamba-Amboró bajo amenaza" data-excerpt="La expansión de vías informales fragmenta uno de los últimos corredores de conectividad ecológica entre Perú y Bolivia." data-author="Ana Lucía Sifuentes">
+            <a href="#" class="card-media" aria-hidden="true" tabindex="-1">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80&auto=format&fit=crop" alt="Vista aérea de la selva amazónica peruana" loading="lazy">
+            </a>
+            <div class="card-body">
+              <span class="tag tag-biodiversidad">Biodiversidad Amazonía</span>
+              <h4 class="card-title"><a href="#">El corredor biológico Vilcabamba-Amboró bajo amenaza</a></h4>
+              <p class="card-excerpt">La expansión de vías informales fragmenta uno de los últimos corredores de conectividad ecológica entre Perú y Bolivia.</p>
+              <div class="card-meta">
+                <span class="card-author"><i class="fa-regular fa-user" aria-hidden="true"></i> Ana Lucía Sifuentes</span>
+                <time class="card-date" datetime="2026-07-15">15 jul 2026</time>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="Biodiversidad Amazonía" data-title="Deforestación en Ucayali alcanza cifra récord" data-excerpt="Imágenes satelitales confirman la mayor pérdida de bosque primario de la última década en la región." data-author="Diego Manrique">
+            <a href="#" class="card-media" aria-hidden="true" tabindex="-1">
+              <img src="https://images.unsplash.com/photo-1516214104703-d870798883c5?w=800&q=80&auto=format&fit=crop" alt="Zona deforestada junto a bosque tropical intacto en la Amazonía" loading="lazy">
+            </a>
+            <div class="card-body">
+              <span class="tag tag-biodiversidad">Biodiversidad Amazonía</span>
+              <h4 class="card-title"><a href="#">Deforestación en Ucayali alcanza cifra récord</a></h4>
+              <p class="card-excerpt">Imágenes satelitales confirman la mayor pérdida de bosque primario de la última década en la región.</p>
+              <div class="card-meta">
+                <span class="card-author"><i class="fa-regular fa-user" aria-hidden="true"></i> Diego Manrique</span>
+                <time class="card-date" datetime="2026-07-08">8 jul 2026</time>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="Conflictos Socioambientales" data-title="Pescadores artesanales exigen plan de contingencia ante derrames" data-excerpt="Comunidades del litoral norte piden protocolos vinculantes tras sucesivos incidentes de contaminación marina." data-author="Pilar Cavero">
+            <a href="#" class="card-media" aria-hidden="true" tabindex="-1">
+              <img src="https://images.unsplash.com/photo-1518877593221-1f28583780b4?w=800&q=80&auto=format&fit=crop" alt="Costa del litoral peruano con embarcaciones de pesca artesanal" loading="lazy">
+            </a>
+            <div class="card-body">
+              <span class="tag tag-conflicto">Conflictos Socioambientales</span>
+              <h4 class="card-title"><a href="#">Pescadores artesanales exigen plan de contingencia ante derrames</a></h4>
+              <p class="card-excerpt">Comunidades del litoral norte piden protocolos vinculantes tras sucesivos incidentes de contaminación marina.</p>
+              <div class="card-meta">
+                <span class="card-author"><i class="fa-regular fa-user" aria-hidden="true"></i> Pilar Cavero</span>
+                <time class="card-date" datetime="2026-06-02">2 jun 2026</time>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SECCIÓN MULTIMEDIA — PODCASTS
+    =========================================================== -->
+    <section class="podcasts" id="podcasts" aria-label="Episodios de podcast">
+      <div class="container">
+        <div class="section-heading section-heading-light">
+          <p class="section-eyebrow">Multimedia</p>
+          <h2>Podcasts</h2>
+          <p class="section-lead">Conversaciones a fondo con especialistas, líderes comunitarios y hacedores de política pública.</p>
+        </div>
+
+        <div class="podcast-list">
+
+          <!-- Episodio 1 -->
+          <div class="podcast-player" data-duration="1145">
+            <button class="play-btn" aria-label="Reproducir episodio: Cambio climático y comunidades altoandinas">
+              <i class="fa-solid fa-play" aria-hidden="true"></i>
+            </button>
+            <div class="podcast-info">
+              <p class="podcast-show">Voces del Ande · Episodio 12</p>
+              <h3 class="podcast-title">Cambio climático y comunidades altoandinas</h3>
+              <div class="progress-wrap">
+                <span class="time-elapsed">0:00</span>
+                <div class="progress-track" role="slider" aria-label="Progreso del episodio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                  <div class="progress-fill"></div>
+                  <div class="progress-handle"></div>
+                </div>
+                <span class="time-total">19:05</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Episodio 2 -->
+          <div class="podcast-player" data-duration="932">
+            <button class="play-btn" aria-label="Reproducir episodio: Economía extractiva y desarrollo sostenible">
+              <i class="fa-solid fa-play" aria-hidden="true"></i>
+            </button>
+            <div class="podcast-info">
+              <p class="podcast-show">Frontera Verde · Episodio 8</p>
+              <h3 class="podcast-title">Economía extractiva y desarrollo sostenible</h3>
+              <div class="progress-wrap">
+                <span class="time-elapsed">0:00</span>
+                <div class="progress-track" role="slider" aria-label="Progreso del episodio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                  <div class="progress-fill"></div>
+                  <div class="progress-handle"></div>
+                </div>
+                <span class="time-total">15:32</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Episodio 3 -->
+          <div class="podcast-player" data-duration="1367">
+            <button class="play-btn" aria-label="Reproducir episodio: Gobernanza ambiental en tiempos de crisis">
+              <i class="fa-solid fa-play" aria-hidden="true"></i>
+            </button>
+            <div class="podcast-info">
+              <p class="podcast-show">Diálogos Públicos · Episodio 21</p>
+              <h3 class="podcast-title">Gobernanza ambiental en tiempos de crisis</h3>
+              <div class="progress-wrap">
+                <span class="time-elapsed">0:00</span>
+                <div class="progress-track" role="slider" aria-label="Progreso del episodio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                  <div class="progress-fill"></div>
+                  <div class="progress-handle"></div>
+                </div>
+                <span class="time-total">22:47</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================
+       PIE DE PÁGINA
+  =========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <!-- Columna 1: Institucional -->
+      <div class="footer-col">
+        <a href="#inicio" class="logo footer-logo" aria-label="Andina Observa, ir al inicio">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="30" height="30">
+              <polyline points="2,32 10,18 16,24 24,10 30,16 38,4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="logo-text">Andina<strong>Observa</strong></span>
+        </a>
+        <p class="footer-mission">Organización peruana sin fines de lucro dedicada a la investigación independiente sobre política pública y medio ambiente, al servicio del debate informado.</p>
+      </div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div class="footer-col">
+        <h5 class="footer-heading">Secciones</h5>
+        <ul class="footer-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#analisis-politico">Análisis Político</a></li>
+          <li><a href="#medio-ambiente">Medio Ambiente</a></li>
+          <li><a href="#podcasts">Podcasts</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Contacto -->
+      <div class="footer-col">
+        <h5 class="footer-heading">Contacto</h5>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Jr. Los Sauces 245, Miraflores, Lima, Perú</li>
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:contacto@andinaobserva.pe">contacto@andinaobserva.pe</a></li>
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+51014567890">+51 (01) 456-7890</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="#" aria-label="Andina Observa en Twitter / X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Andina Observa en Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Andina Observa en Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Andina Observa en YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Andina Observa. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
